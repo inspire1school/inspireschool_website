@@ -5,6 +5,23 @@ document.addEventListener('DOMContentLoaded', function() {
     const closeModalBtn = document.getElementById('closeModal');
     const modalMessage = document.getElementById('modalMessage');
 
+    // Логіка слайдера відгуків
+    const slider = document.getElementById('reviewsSlider');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+
+    if (slider && prevBtn && nextBtn) {
+        // Прокрутка на одну картку (приблизно 380px)
+        prevBtn.addEventListener('click', () => {
+            slider.scrollBy({ left: -380, behavior: 'smooth' });
+        });
+
+        nextBtn.addEventListener('click', () => {
+            slider.scrollBy({ left: 380, behavior: 'smooth' });
+        });
+    }
+
+    // Форматування номера телефону
     phoneInput.addEventListener('focus', function() {
         if (this.value === '') {
             this.value = '+380';
@@ -29,18 +46,30 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // Обробка відправки форми
     form.addEventListener('submit', function(event) {
         event.preventDefault();
 
         const name = document.getElementById('name').value;
         const phone = document.getElementById('phone').value;
-        const telegram = document.getElementById('telegram').value;
+        let telegram = document.getElementById('telegram').value;
         const level = document.getElementById('level').value;
+
+        // Автоматичне додавання @ до Telegram ніка
+        if (!telegram.startsWith('@') && !telegram.includes('http')) {
+            telegram = '@' + telegram;
+        }
 
         if(phone.length < 13) {
             alert('Будь ласка, введіть повний номер телефону.');
             return;
         }
+
+        // Анімація кнопки "Відправка..."
+        const submitBtn = form.querySelector('.btn-submit');
+        const originalBtnText = submitBtn.innerText;
+        submitBtn.innerText = 'Відправка...';
+        submitBtn.disabled = true;
 
         if(name && phone && telegram && level) {
             const formData = {
@@ -71,6 +100,11 @@ document.addEventListener('DOMContentLoaded', function() {
             .catch(error => {
                 console.error('Помилка відправки:', error);
                 alert('Не вдалося з\'єднатися з сервером. Перевірте інтернет.');
+            })
+            .finally(() => {
+                // Повертаємо кнопку в нормальний стан
+                submitBtn.innerText = originalBtnText;
+                submitBtn.disabled = false;
             });
         }
     });

@@ -632,6 +632,49 @@ footer .logo { color: #fff; }
     to { opacity: 1; transform: translateY(0); }
 }
 
+/* --- СТИЛІ ПЛАВАЮЧОЇ КНОПКИ TELEGRAM --- */
+.floating-tg-btn {
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    background: linear-gradient(135deg, #0088cc 0%, #00aaff 100%);
+    color: #fff;
+    padding: 14px 28px 14px 18px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.05rem;
+    box-shadow: 0 10px 25px rgba(0, 136, 204, 0.4);
+    z-index: 1000;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    animation: floatBtn 3s ease-in-out infinite;
+}
+
+.floating-tg-btn svg {
+    width: 26px;
+    height: 26px;
+    transition: transform 0.3s ease;
+}
+
+.floating-tg-btn:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 15px 35px rgba(0, 136, 204, 0.5);
+    animation: none;
+}
+
+.floating-tg-btn:hover svg {
+    transform: rotate(-10deg) scale(1.15);
+}
+
+@keyframes floatBtn {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0px); }
+}
+
 @media (max-width: 1024px) {
     .teacher-showcase { flex-direction: column; gap: 4rem; }
     .teacher-gallery { min-width: 100%; height: 500px; }
@@ -676,4 +719,20 @@ footer .logo { color: #fff; }
     .form-group label { font-size: 0.9rem; }
     
     .footer-content { flex-direction: column; gap: 1.5rem; text-align: center; }
+
+    /* Компактний вигляд плаваючої кнопки на телефонах */
+    .floating-tg-btn {
+        bottom: 25px;
+        right: 25px;
+        padding: 15px;
+        border-radius: 50%;
+    }
+    .floating-tg-btn span {
+        display: none; /* Ховаємо текст, залишаємо лише іконку */
+    }
+    .floating-tg-btn svg {
+        margin: 0;
+        width: 30px;
+        height: 30px;
+    }
 }

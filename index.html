@@ -2,11 +2,10 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Inspire School</title>
     <meta name="description" content="Inspire School | Сучасна школа англійської мови онлайн. Індивідуальні та групові заняття.">
     
-    <!-- Предзавантаження шрифтів для швидкості -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -35,7 +34,6 @@
         <a href="#contact" class="btn btn-nav">Записатись</a>
     </header>
 
-    <!-- Додано тег MAIN за вимогою Google Accessibility -->
     <main>
         <section class="hero" id="home">
             <div class="hero-content">
@@ -80,11 +78,11 @@
                         <img src="teacher2.jpg" alt="Юлія Стародуб портрет" loading="lazy" width="280" height="400">
                     </div>
                     <div class="image-wrapper main-img">
-                        <img src="teacher1.jpg" alt="Юлія Стародуб викладач" loading="lazy" width="360" height="460">
+                        <img src="teacher1.jpg" alt="Юлія Стародуб викладач" fetchpriority="high" width="360" height="460">
                     </div>
                     <div class="experience-badge">
                         <span class="badge-title">USA Experience</span>
-                        <span class="badge-desc">Work & Travel</span>
+                        <span class="badge-desc" style="color: #d8b4fe;">Work & Travel</span>
                     </div>
                 </div>
                 
@@ -97,7 +95,6 @@
                     </p>
 
                     <div class="info-list">
-                        <!-- Виправлено ієрархію заголовків h4 -> h3 -->
                         <div class="info-item">
                             <div class="info-icon">🎓</div>
                             <div class="info-text">
@@ -178,7 +175,6 @@
                     <div class="review-card">
                         <div class="review-header">
                             <div class="avatar">
-                                <!-- Змінено параметри Unsplash для оптимізації ваги (w=80) -->
                                 <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&h=80&q=80" alt="Анастасія" loading="lazy" width="55" height="55">
                             </div>
                             <div class="reviewer-info">
@@ -246,7 +242,6 @@
                 <p>Залиш заявку на безкоштовне вступне тестування та отримай персональний план навчання.</p>
                 
                 <form id="leadForm">
-                    <!-- Додані aria-label для PageSpeed Accessibility -->
                     <div class="form-group">
                         <input type="text" id="name" required placeholder=" " aria-label="Ваше ім'я">
                         <label for="name">Ваше ім'я</label>
@@ -289,12 +284,11 @@
                 <img src="icon.jpg" alt="Inspire School Logo" class="logo-img" width="38" height="38" loading="lazy">
                 inspire<span>school</span>
             </div>
-            <p>&copy; 2026 Inspire School. Виготовлено з пристрастю до англійської.</p>
+            <p style="color: #94a3b8;">&copy; 2026 Inspire School. Виготовлено з пристрастю до англійської.</p>
         </div>
     </footer>
 
-    <!-- Адаптована кнопка Telegram з aria-label -->
-    <a href="https://t.me/Inspire_School_bot" target="_blank" class="floating-tg-btn" aria-label="Перейти в Telegram-бот">
+    <a href="https://t.me/YOUR_BOT_USERNAME" target="_blank" class="floating-tg-btn" aria-label="Перейти в Telegram-бот">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#fff" aria-hidden="true">
             <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.223-.548.223l.188-2.85 5.18-4.686c.223-.195-.054-.31-.346-.11l-6.4 4.02-2.76-.89c-.6-.188-.614-.588.125-.88l10.824-4.174c.503-.196.953.116.837.875z"/>
         </svg>

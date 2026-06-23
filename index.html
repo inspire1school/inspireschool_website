@@ -2,7 +2,7 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <title>Inspire School</title>
     <meta name="description" content="Inspire School | Сучасна школа англійської мови онлайн. Індивідуальні та групові заняття.">
     
@@ -14,286 +14,288 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+    <div class="page-wrapper">
+        <div class="glow-blob blob-1"></div>
+        <div class="glow-blob blob-2"></div>
 
-    <div class="glow-blob blob-1"></div>
-    <div class="glow-blob blob-2"></div>
-
-    <header>
-        <div class="logo">
-            <img src="icon.jpg" alt="Inspire School Logo" class="logo-img" width="38" height="38">
-            inspire<span>school</span>
-        </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#about">Про нас</a></li>
-                <li><a href="#teacher">Викладач</a></li>
-                <li><a href="#courses">Програми</a></li>
-                <li><a href="#reviews">Відгуки</a></li>
-            </ul>
-        </nav>
-        <a href="#contact" class="btn btn-nav">Записатись</a>
-    </header>
-
-    <main>
-        <section class="hero" id="home">
-            <div class="hero-content">
-                <span class="badge">🔥 Новий набір 2026</span>
-                <h1>Заговори англійською <span class="gradient-text">без страху</span> та сорому</h1>
-                <p>Руйнуємо мовні бар'єри через живі лайфхаки, 80% розмовної практики та інтерактивний підхід. Нудне зубріння залишається в минулому.</p>
-                <div class="hero-actions">
-                    <a href="#contact" class="btn btn-primary">Пробувати безкоштовно</a>
-                    <a href="#teacher" class="btn btn-secondary">Хто викладає?</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="features" id="about">
-            <div class="section-header">
-                <span class="sub-title">Чому ми?</span>
-                <h2>Твій швидкий прогрес</h2>
-            </div>
-            <div class="cards-grid">
-                <div class="feature-card">
-                    <div class="icon-box">⚡️</div>
-                    <h3>Сучасна методика</h3>
-                    <p>Мінімум сухої теорії, максимум реального спілкування. Вчимо мову, якою дійсно говорять у світі.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon-box">📅</div>
-                    <h3>Гнучкий графік</h3>
-                    <p>Навчання підлаштовується під твій темп життя. Займайся комфортно з будь-якого пристрою.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon-box">💎</div>
-                    <h3>Результат з нуля</h3>
-                    <p>Покрокова система індивідуального супроводу, яка веде тебе від першого «Hello» до впевненого спілкування.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="teacher-section" id="teacher">
-            <div class="teacher-showcase">
-                <div class="teacher-gallery">
-                    <div class="image-wrapper accent-img">
-                        <img src="teacher2.jpg" alt="Юлія Стародуб портрет" loading="lazy" width="280" height="400">
-                    </div>
-                    <div class="image-wrapper main-img">
-                        <img src="teacher1.jpg" alt="Юлія Стародуб викладач" fetchpriority="high" width="360" height="460">
-                    </div>
-                    <div class="experience-badge">
-                        <span class="badge-title">USA Experience</span>
-                        <span class="badge-desc" style="color: #d8b4fe;">Work & Travel</span>
-                    </div>
-                </div>
-                
-                <div class="teacher-details">
-                    <span class="badge-purple">Твій інструктор</span>
-                    <h2>Юлія Стародуб</h2>
-                    <p class="teacher-bio">
-                        Енергійна та прогресивна викладачка, яка точно знає, як зламати мовний бар'єр. 
-                        З нею ви забудете про нудну шкільну рутину, адже вона сама використовує англійську як інструмент для реального життя та кар'єри. 💼
-                    </p>
-
-                    <div class="info-list">
-                        <div class="info-item">
-                            <div class="info-icon">🎓</div>
-                            <div class="info-text">
-                                <h3>Освіта</h3>
-                                <p>Випускниця факультету іноземних мов ЛНУ ім. Івана Франка.</p>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-icon">🇺🇸</div>
-                            <div class="info-text">
-                                <h3>Досвід у США</h3>
-                                <p>Провела літо в Америці за програмою Work and Travel USA. Спілкувалася з native speakers.</p>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-icon">🏆</div>
-                            <div class="info-text">
-                                <h3>Міжнародний досвід</h3>
-                                <p>Працювала менеджером з англомовними IT-клієнтами та координувала глобальні проєкти.</p>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-icon">🏫</div>
-                            <div class="info-text">
-                                <h3>Викладацький підхід</h3>
-                                <p>Успішний досвід приватного репетиторства, власні інтерактивні матеріали.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="glass-card-fact">
-                        <span class="fact-emoji">✨</span>
-                        <div>
-                            <strong>Fun fact:</strong> Окрім англійської, Юлія закінчила музичну школу по класу фортепіано, професійно займалася бальними танцями та обожнює подорожі!
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="courses" id="courses">
-            <div class="section-header">
-                <span class="sub-title">Обери свій напрямок</span>
-                <h2>Наші навчальні програми</h2>
-            </div>
-            <div class="cards-grid">
-                <div class="course-card">
-                    <div class="course-tag tag-individual">Індивідуально</div>
-                    <h3>Індивідуальне A1</h3>
-                    <p>Для повних новачків. Комфортна підготовка у власному темпі для плавного переходу до подальшого вивчення в групі A1.</p>
-                    <a href="#contact" class="course-link">Детальніше →</a>
-                </div>
-                <div class="course-card">
-                    <div class="course-tag tag-group">В групі</div>
-                    <h3>Групові A1</h3>
-                    <p>Ідеальний старт для тих, хто починає з нуля. Долаємо мовний бар'єр одразу в дружній атмосфері та багато спілкуємося.</p>
-                    <a href="#contact" class="course-link">Детальніше →</a>
-                </div>
-                <div class="course-card">
-                    <div class="course-tag tag-group">В групі</div>
-                    <h3>Групові A2</h3>
-                    <p>Для тих, хто вже має базові знання і готовий рухатися далі. Складніша граматика, більше впевненості та розмовної практики.</p>
-                    <a href="#contact" class="course-link">Детальніше →</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="reviews" id="reviews">
-            <div class="section-header">
-                <span class="sub-title">Що кажуть студенти</span>
-                <h2>Відгуки наших учнів</h2>
-            </div>
-            
-            <div class="slider-container">
-                <button class="slider-btn prev-btn" aria-label="Попередній відгук">❮</button>
-                
-                <div class="reviews-slider" id="reviewsSlider">
-                    <div class="review-card">
-                        <div class="review-header">
-                            <div class="avatar">
-                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&h=80&q=80" alt="Анастасія" loading="lazy" width="55" height="55">
-                            </div>
-                            <div class="reviewer-info">
-                                <h3>Анастасія К.</h3>
-                                <div class="stars" aria-label="5 зірок">⭐⭐⭐⭐⭐</div>
-                            </div>
-                        </div>
-                        <p>"Дуже сподобався підхід. Юлія вміє створити таку атмосферу, що страх зробити помилку просто зникає! Мінімум сухої теорії, максимум розмовної практики."</p>
-                    </div>
-                    
-                    <div class="review-card">
-                        <div class="review-header">
-                            <div class="avatar text-avatar">М</div>
-                            <div class="reviewer-info">
-                                <h3>Максим З.</h3>
-                                <div class="stars" aria-label="5 зірок">⭐⭐⭐⭐⭐</div>
-                            </div>
-                        </div>
-                        <p>"Зручний графік і крута подача матеріалу. Жодного нудного зубріння з підручників, все пояснюється доступно та логічно. Заговорив англійською набагато впевненіше."</p>
-                    </div>
-
-                    <div class="review-card">
-                        <div class="review-header">
-                            <div class="avatar text-avatar">А</div>
-                            <div class="reviewer-info">
-                                <h3>Аліна В.</h3>
-                                <div class="stars" aria-label="3 зірки">⭐⭐⭐</div>
-                            </div>
-                        </div>
-                        <p>"Сам курс непоганий, багато корисного. Але інтенсивність досить висока, через роботу іноді просто не встигала робити всі домашні завдання. В цілому нормально."</p>
-                    </div>
-
-                    <div class="review-card">
-                        <div class="review-header">
-                            <div class="avatar text-avatar">Д</div>
-                            <div class="reviewer-info">
-                                <h3>Дарина М.</h3>
-                                <div class="stars" aria-label="5 зірок">⭐⭐⭐⭐⭐</div>
-                            </div>
-                        </div>
-                        <p>"Уроки пролітають непомітно! Юлія добре мотивує, розбираємо реальні життєві ситуації, сленг та фрази, які дійсно використовуються за кордоном, а не просто завчені правила."</p>
-                    </div>
-
-                    <div class="review-card">
-                        <div class="review-header">
-                            <div class="avatar">
-                                <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=80&h=80&q=80" alt="Артем" loading="lazy" width="55" height="55">
-                            </div>
-                            <div class="reviewer-info">
-                                <h3>Артем П.</h3>
-                                <div class="stars" aria-label="5 зірок">⭐⭐⭐⭐⭐</div>
-                            </div>
-                        </div>
-                        <p>"Груповий курс А2 виправдав очікування. Класно тримають фокус групи, багато спілкування між учнями. Тепер можу спокійно розмовляти під час подорожей Європою."</p>
-                    </div>
-                </div>
-
-                <button class="slider-btn next-btn" aria-label="Наступний відгук">❯</button>
-            </div>
-        </section>
-
-        <section class="contact-section" id="contact">
-            <div class="contact-box">
-                <h2>Почни розмовляти вже цього тижня</h2>
-                <p>Залиш заявку на безкоштовне вступне тестування та отримай персональний план навчання.</p>
-                
-                <form id="leadForm">
-                    <div class="form-group">
-                        <input type="text" id="name" required placeholder=" " aria-label="Ваше ім'я">
-                        <label for="name">Ваше ім'я</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" id="phone" required placeholder=" " aria-label="Номер телефону">
-                        <label for="phone">Номер телефону</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="telegram" required placeholder=" " aria-label="Telegram нікнейм">
-                        <label for="telegram">Telegram (наприклад, @username)</label>
-                    </div>
-                    <div class="form-group">
-                        <select id="level" required aria-label="Поточний рівень англійської">
-                            <option value="" disabled selected hidden></option>
-                            <option value="beginner">Починаю з нуля (Beginner)</option>
-                            <option value="elementary">Маю базові знання (Elementary)</option>
-                            <option value="intermediate">Вільно спілкуюсь (Intermediate+)</option>
-                        </select>
-                        <label for="level" class="select-label">Поточний рівень</label>
-                    </div>
-                    <button type="submit" class="btn btn-submit">Забронювати місце</button>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <div id="successModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-        <div class="modal-content">
-            <div class="modal-icon" aria-hidden="true">✅</div>
-            <h3 id="modalTitle">Заявку прийнято!</h3>
-            <p id="modalMessage">Дякуємо! Ваша заявка успішно надіслана. Ми зв'яжемося з вами найближчим часом.</p>
-            <button id="closeModal" class="btn btn-primary" style="width: 100%;">Супер, чекаю!</button>
-        </div>
-    </div>
-
-    <footer>
-        <div class="footer-content">
+        <header>
             <div class="logo">
-                <img src="icon.jpg" alt="Inspire School Logo" class="logo-img" width="38" height="38" loading="lazy">
+                <img src="icon.jpg" alt="Inspire School Logo" class="logo-img" width="38" height="38">
                 inspire<span>school</span>
             </div>
-            <p style="color: #94a3b8;">&copy; 2026 Inspire School. Виготовлено з пристрастю до англійської.</p>
-        </div>
-    </footer>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">Про нас</a></li>
+                    <li><a href="#teacher">Викладач</a></li>
+                    <li><a href="#courses">Програми</a></li>
+                    <li><a href="#reviews">Відгуки</a></li>
+                </ul>
+            </nav>
+            <a href="#contact" class="btn btn-nav">Записатись</a>
+        </header>
 
-    <a href="https://t.me/YOUR_BOT_USERNAME" target="_blank" class="floating-tg-btn" aria-label="Перейти в Telegram-бот">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#fff" aria-hidden="true">
-            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.223-.548.223l.188-2.85 5.18-4.686c.223-.195-.054-.31-.346-.11l-6.4 4.02-2.76-.89c-.6-.188-.614-.588.125-.88l10.824-4.174c.503-.196.953.116.837.875z"/>
-        </svg>
-        <span>Перейти в Telegram-бот</span>
-    </a>
+        <main>
+            <section class="hero" id="home">
+                <div class="hero-content">
+                    <span class="badge">🔥 Новий набір 2026</span>
+                    <h1>Заговори англійською <span class="gradient-text">без страху</span> та сорому</h1>
+                    <p>Руйнуємо мовні бар'єри через живі лайфхаки, 80% розмовної практики та інтерактивний підхід. Нудне зубріння залишається в минулому.</p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">Пробувати безкоштовно</a>
+                        <a href="#teacher" class="btn btn-secondary">Хто викладає?</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features" id="about">
+                <div class="section-header">
+                    <span class="sub-title">Чому ми?</span>
+                    <h2>Твій швидкий прогрес</h2>
+                </div>
+                <div class="cards-grid">
+                    <div class="feature-card">
+                        <div class="icon-box">⚡️</div>
+                        <h3>Сучасна методика</h3>
+                        <p>Мінімум сухої теорії, максимум реального спілкування. Вчимо мову, якою дійсно говорять у світі.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon-box">📅</div>
+                        <h3>Гнучкий графік</h3>
+                        <p>Навчання підлаштовується під твій темп життя. Займайся комфортно з будь-якого пристрою.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon-box">💎</div>
+                        <h3>Результат з нуля</h3>
+                        <p>Покрокова система індивідуального супроводу, яка веде тебе від першого «Hello» до впевненого спілкування.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="teacher-section" id="teacher">
+                <div class="teacher-showcase">
+                    <div class="teacher-gallery">
+                        <div class="image-wrapper main-img">
+                            <img src="teacher1.jpg" alt="Юлія Стародуб викладач" fetchpriority="high" width="360" height="460">
+                        </div>
+                        <div class="image-wrapper accent-img">
+                            <img src="teacher2.jpg" alt="Юлія Стародуб портрет" loading="lazy" width="280" height="400">
+                        </div>
+                        <div class="experience-badge">
+                            <span class="badge-title">USA Experience</span>
+                            <span class="badge-desc">Work & Travel</span>
+                        </div>
+                    </div>
+                    
+                    <div class="teacher-details">
+                        <span class="badge-purple">Твій інструктор</span>
+                        <h2>Юлія Стародуб</h2>
+                        <p class="teacher-bio">
+                            Енергійна та прогресивна викладачка, яка точно знає, як зламати мовний бар'єр. 
+                            З нею ви забудете про нудну шкільну рутину, адже вона сама використовує англійську як інструмент для реального життя та кар'єри. 💼
+                        </p>
+
+                        <div class="info-list">
+                            <div class="info-item">
+                                <div class="info-icon">🎓</div>
+                                <div class="info-text">
+                                    <h3>Освіта</h3>
+                                    <p>Випускниця факультету іноземних мов ЛНУ ім. Івана Франка.</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">🇺🇸</div>
+                                <div class="info-text">
+                                    <h3>Досвід у США</h3>
+                                    <p>Провела літо в Америці за програмою Work and Travel USA. Спілкувалася з native speakers.</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">🏆</div>
+                                <div class="info-text">
+                                    <h3>Міжнародний досвід</h3>
+                                    <p>Працювала менеджером з англомовними IT-клієнтами та координувала глобальні проєкти.</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">🏫</div>
+                                <div class="info-text">
+                                    <h3>Викладацький підхід</h3>
+                                    <p>Успішний досвід приватного репетиторства, власні інтерактивні матеріали.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="glass-card-fact">
+                            <span class="fact-emoji">✨</span>
+                            <div>
+                                <strong>Fun fact:</strong> Окрім англійської, Юлія закінчила музичну школу по класу фортепіано, професійно займалася бальними танцями та обожнює подорожі!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="courses" id="courses">
+                <div class="section-header">
+                    <span class="sub-title">Обери свій напрямок</span>
+                    <h2>Наші навчальні програми</h2>
+                </div>
+                <div class="cards-grid">
+                    <div class="course-card">
+                        <div class="course-tag tag-individual">Індивідуально</div>
+                        <h3>Індивідуальне A1</h3>
+                        <p>Для повних новачків. Комфортна підготовка у власному темпі для плавного переходу до подальшого вивчення в групі A1.</p>
+                        <a href="#contact" class="course-link">Детальніше →</a>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-tag tag-group">В групі</div>
+                        <h3>Групові A1</h3>
+                        <p>Ідеальний старт для тих, хто починає з нуля. Долаємо мовний бар'єр одразу в дружній атмосфері та багато спілкуємося.</p>
+                        <a href="#contact" class="course-link">Детальніше →</a>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-tag tag-group">В групі</div>
+                        <h3>Групові A2</h3>
+                        <p>Для тих, хто вже має базові знання і готовий рухатися далі. Складніша граматика, більше впевненості та розмовної практики.</p>
+                        <a href="#contact" class="course-link">Детальніше →</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="reviews" id="reviews">
+                <div class="section-header">
+                    <span class="sub-title">Що кажуть студенти</span>
+                    <h2>Відгуки наших учнів</h2>
+                </div>
+                
+                <div class="slider-container">
+                    <button class="slider-btn prev-btn" aria-label="Попередній відгук">❮</button>
+                    
+                    <div class="reviews-slider" id="reviewsSlider">
+                        <div class="review-card">
+                            <div class="review-header">
+                                <div class="avatar">
+                                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&h=80&q=80" alt="Анастасія" loading="lazy" width="55" height="55">
+                                </div>
+                                <div class="reviewer-info">
+                                    <h3>Анастасія К.</h3>
+                                    <div class="stars" aria-label="5 зірок">⭐⭐⭐⭐⭐</div>
+                                </div>
+                            </div>
+                            <p>"Дуже сподобався підхід. Юлія вміє створити таку атмосферу, що страх зробити помилку просто зникає! Мінімум сухої теорії, максимум розмовної практики."</p>
+                        </div>
+                        
+                        <div class="review-card">
+                            <div class="review-header">
+                                <div class="avatar text-avatar">М</div>
+                                <div class="reviewer-info">
+                                    <h3>Максим З.</h3>
+                                    <div class="stars" aria-label="5 зірок">⭐⭐⭐⭐⭐</div>
+                                </div>
+                            </div>
+                            <p>"Зручний графік і крута подача матеріалу. Жодного нудного зубріння з підручників, все пояснюється доступно та логічно. Заговорив англійською набагато впевненіше."</p>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="review-header">
+                                <div class="avatar text-avatar">А</div>
+                                <div class="reviewer-info">
+                                    <h3>Аліна В.</h3>
+                                    <div class="stars" aria-label="3 зірки">⭐⭐⭐</div>
+                                </div>
+                            </div>
+                            <p>"Сам курс непоганий, багато корисного. Але інтенсивність досить висока, через роботу іноді просто не встигала робити всі домашні завдання. В цілому нормально."</p>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="review-header">
+                                <div class="avatar text-avatar">Д</div>
+                                <div class="reviewer-info">
+                                    <h3>Дарина М.</h3>
+                                    <div class="stars" aria-label="5 зірок">⭐⭐⭐⭐⭐</div>
+                                </div>
+                            </div>
+                            <p>"Уроки пролітають непомітно! Юлія добре мотивує, розбираємо реальні життєві ситуації, сленг та фрази, які дійсно використовуються за кордоном, а не просто завчені правила."</p>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="review-header">
+                                <div class="avatar">
+                                    <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=80&h=80&q=80" alt="Артем" loading="lazy" width="55" height="55">
+                                </div>
+                                <div class="reviewer-info">
+                                    <h3>Артем П.</h3>
+                                    <div class="stars" aria-label="5 зірок">⭐⭐⭐⭐⭐</div>
+                                </div>
+                            </div>
+                            <p>"Груповий курс А2 виправдав очікування. Класно тримають фокус групи, багато спілкування між учнями. Тепер можу спокійно розмовляти під час подорожей Європою."</p>
+                        </div>
+                    </div>
+
+                    <button class="slider-btn next-btn" aria-label="Наступний відгук">❯</button>
+                </div>
+            </section>
+
+            <section class="contact-section" id="contact">
+                <div class="contact-box">
+                    <h2>Почни розмовляти вже цього тижня</h2>
+                    <p>Залиш заявку на безкоштовне вступне тестування та отримай персональний план навчання.</p>
+                    
+                    <form id="leadForm">
+                        <div class="form-group">
+                            <input type="text" id="name" required placeholder=" " aria-label="Ваше ім'я">
+                            <label for="name">Ваше ім'я</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" required placeholder=" " aria-label="Номер телефону">
+                            <label for="phone">Номер телефону</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="telegram" required placeholder=" " aria-label="Telegram нікнейм">
+                            <label for="telegram">Telegram (наприклад, @username)</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="level" required aria-label="Поточний рівень англійської">
+                                <option value="" disabled selected hidden></option>
+                                <option value="beginner">Починаю з нуля (Beginner)</option>
+                                <option value="elementary">Маю базові знання (Elementary)</option>
+                                <option value="intermediate">Вільно спілкуюсь (Intermediate+)</option>
+                            </select>
+                            <label for="level" class="select-label">Поточний рівень</label>
+                        </div>
+                        <button type="submit" class="btn btn-submit">Забронювати місце</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <div id="successModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <div class="modal-content">
+                <div class="modal-icon" aria-hidden="true">✅</div>
+                <h2 id="modalTitle" style="font-size: 1.8rem; font-weight: 800; margin-bottom: 1rem;">Заявку прийнято!</h2>
+                <p id="modalMessage">Дякуємо! Ваша заявка успішно надіслана. Ми зв'яжемося з вами найближчим часом.</p>
+                <button id="closeModal" class="btn btn-primary" style="width: 100%;">Супер, чекаю!</button>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <div class="logo">
+                    <img src="icon.jpg" alt="Inspire School Logo" class="logo-img" width="38" height="38" loading="lazy">
+                    inspire<span>school</span>
+                </div>
+                <p class="footer-text">&copy; 2026 Inspire School. Виготовлено з пристрастю до англійської.</p>
+            </div>
+        </footer>
+
+        <a href="https://t.me/Inspire_School_bot" target="_blank" class="floating-tg-btn" aria-label="Перейти в Telegram-бот">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#fff" aria-hidden="true">
+                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.223-.548.223l.188-2.85 5.18-4.686c.223-.195-.054-.31-.346-.11l-6.4 4.02-2.76-.89c-.6-.188-.614-.588.125-.88l10.824-4.174c.503-.196.953.116.837.875z"/>
+            </svg>
+            <span>Перейти в Telegram-бот</span>
+        </a>
+    </div>
 
     <script src="script.js"></script>
 </body>
